@@ -6,7 +6,7 @@
 
 > **Abstract:** 
 Recently, spiking neural networks (SNNs) have demonstrated substantial potential in computer vision tasks.
-In this paper, we present an \textbf{E}fficient \textbf{S}piking \textbf{D}eraining \textbf{Net}work, called ESDNet.
+In this paper, we present an Efficient Spiking Deraining Network, called ESDNet.
 Our work is motivated by the observation that rain pixel values will lead to a more pronounced intensity of spike signals in SNNs. However, directly applying deep SNNs to image deraining task still remains a significant challenge.
 This is attributed to the information loss and training difficulties that arise from discrete binary activation and complex spatio-temporal dynamics.
 To this end, we develop a spiking residual block to convert the input into spike signals, then adaptively optimize the membrane potential by introducing attention weights to adjust spike responses in a data-driven manner, alleviating information loss caused by discrete binary activation.
@@ -14,14 +14,15 @@ By this way, our ESDNet can effectively detect and analyze the characteristics o
 Instead of relying on the ANN-SNN conversion strategy, we introduce a gradient proxy strategy to directly train the model for overcoming the challenge of training. 
 Experimental results show that our approach gains comparable performance against ANN-based methods while reducing energy consumption by 54\%. 
 
-![RSDformer](figs/arch.png)
+![ESDNet](arch.png)
 
+<!---
 ## News
 
 - **July 4, 2023:** Paper submitted. 
 - **Sep 13, 2023:** The basic version is released, including codes, pre-trained models on the Sate 1k dataset, and the used dataset.
 - **Sep 14, 2023:** RICE dataset updated.
-<!---  ** Sep 15, 2023:** The [visual results on Sate 1K](https://pan.baidu.com/s/1dToHnHI9GVaHQ3-I6OIbpA?pwd=rs1k) and [real-world dataset RSSD300](https://pan.baidu.com/s/1OZUWj8eo6EmP5Rh8DE1mrA?pwd=8ad5) are updated.-->
+  ** Sep 15, 2023:** The [visual results on Sate 1K](https://pan.baidu.com/s/1dToHnHI9GVaHQ3-I6OIbpA?pwd=rs1k) and [real-world dataset RSSD300](https://pan.baidu.com/s/1OZUWj8eo6EmP5Rh8DE1mrA?pwd=8ad5) are updated.-->
 
 
 ## Preparation
@@ -31,59 +32,44 @@ Experimental results show that our approach gains comparable performance against
 <thead>
   <tr>
     <th>Dataset</th>
-    <th>Thin Haze</th>
-    <th>Moderate Haze</th>
-    <th>Thick Haze</th>
-    <th>RICE</th>
-    <th>RSSD300</th>
+    <th>Rain12</th>
+    <th>Rain200L</th>
+    <th>Rain200H</th>
+    <th>Rain1200</th>
+    <th>RW_Rain</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Baidu Cloud</td>
-    <td> <a href="https://pan.baidu.com/s/1r7RvVBKIj-viGxdxGE-HsQ?pwd=axjx ">Download</a> </td>
-    <td align="center"> <a href="https://pan.baidu.com/s/1r7RvVBKIj-viGxdxGE-HsQ?pwd=axjx ">Download</a> </td>
-    <td> <a href="https://pan.baidu.com/s/1r7RvVBKIj-viGxdxGE-HsQ?pwd=axjx ">Download</a> </td>
-    <td> <a href="https://pan.baidu.com/s/1zbTBTys4VqL9CnJI0UFgoQ?pwd=7vj5">Download</a> </td>
-    <td> <a href="https://pan.baidu.com/s/1OZUWj8eo6EmP5Rh8DE1mrA?pwd=8ad5">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/1mrXshB3Y0qO205aRR_lZaw?pwd=9ojl 提取码：9ojl">Download</a> </td>
+    <td align="center"> <a href="https://pan.baidu.com/s/1wzvNW7UgLsSZbLd_lFfpyA?pwd=s6v0 提取码：s6v0 ">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/1pPF4CL7rvKRVvkVkJ0C8RA?pwd=k2iv 提取码：k2iv">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/1RlzbJa8XtCBUHXrJfxqiIQ?pwd=ajnz 提取码：ajnz">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/1GM85dkgxf8CyuwlhOV4e8Q?pwd=23vf 提取码：23vf">Download</a> </td>
   </tr>
 </tbody>
 </table>
-Here, the ''Thin haze'', ''Moderate haze'' and ''Thick haze'' are included in the Sate 1K dataset. We provide completely paired images, except for RRSD300, as it is a real-world remote sensing haze dataset. 
 
-<!---
-## Pre-trained Models
+## 🤖 Pre-trained Models
 <table>
 <thead>
   <tr>
     <th>Dataset</th>
-    <th>Thin Haze</th>
-    <th>Moderate Haze</th>
-    <th>Thick Haze</th>
-    <th>RICE</th>
+    <th>Rain200L</th>
+    <th>Rain200H</th>
+    <th>Rain1200</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Baidu Cloud</td>
-    <td> <a href="https://pan.baidu.com/s/1ncoc2qnlZd5hkSak6jEvrw?pwd=0nvo">Download</a> </td>
-    <td align="center"> <a href="https://pan.baidu.com/s/1ncoc2qnlZd5hkSak6jEvrw?pwd=0nvo">Download</a> </td>
-    <td > <a href="https://pan.baidu.com/s/1ncoc2qnlZd5hkSak6jEvrw?pwd=0nvo">Download</a> </td>
-    <td> <a href="https://pan.baidu.com/s/1OWtEGwccqzf6cmCtDhWZnA?pwd=gj56">Download</a> </td>
-  </tr>
-</tbody>
-<tbody>
-  <tr>
-    <td>Google Drive</td>
-    <td> <a href="https://drive.google.com/drive/folders/1Dbja877w0TWXDqw9WYVwnRQMl6V9DkaT?usp=drive_link">Download</a> </td>
-    <td align="center"> <a href="https://drive.google.com/drive/folders/1Dbja877w0TWXDqw9WYVwnRQMl6V9DkaT?usp=drive_link">Download</a> </td>
-    <td> <a href="https://drive.google.com/drive/folders/1Dbja877w0TWXDqw9WYVwnRQMl6V9DkaT?usp=drive_link">Download</a> </td>
-    <td> <a href="https://drive.google.com/drive/folders/1-d4OrxIbN3sN5coywpAvQavFIpQKxQwN?usp=drive_link">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/1Fzl0aHfGo2DoQdeJN7zIZQ?pwd=swq2 提取码：swq2">Download</a> </td>
+    <td align="center"> <a href="https://pan.baidu.com/s/1Gp7bN2IU74EOSuIOr-duGg?pwd=4w57 提取码：4w57">Download</a> </td>
+    <td > <a href="https://pan.baidu.com/s/1s6IybtRMsPF0dhEt2Z0sRQ?pwd=9d03 提取码：9d03">Download</a> </td>
   </tr>
 </tbody>
 </table>
-Currently, we only provide the pre-trained models trained on the Sate 1K dataset. The pre-trained model of the RICE dataset will be updated as quickly as soon.
---->
 
 ### Install
 
@@ -91,8 +77,8 @@ We test the code on PyTorch 1.9.1 + CUDA 11.1 + cuDNN 8.0.5.
 
 1. Create a new conda environment
 ```
-conda create -n RSDformer python=3.8
-conda activate RSDformer 
+conda create -n ESDNet python=3.8
+conda activate ESDNet 
 ```
 
 2. Install dependencies
@@ -104,51 +90,44 @@ pip install matplotlib scikit-image opencv-python numpy einops math natsort tqdm
 
 ### Download
 
-You can download the pre-trained models and datasets on Google Drive or BaiduPan.
-
-Currently, we only provide the pre-trained model trained on the Sate 1K dataset and the used dataset (Sate 1K, RICE and RRSD300).  
-
-The pre-trained models trained on RICE will be updated as quickly as possible.
+You can download the pre-trained models and datasets on BaiduPan.
 
 The final file path should be the same as the following:
 
 ```
 ┬─ pretrained_models
-│   ├─ thin_haze.pth
-│   ├─ moderate_haze.pth
+│   ├─ Rain12.pth
+│   ├─ Rain200H.pth
 │   ├─ ... (model name)
 │   └─ ... (exp name)
 └─ data
-    ├─ Sate_1K
-    │├─ Haze1k_thick
-    ││   ├─ train
-    ││   │   ├─ input
-    ││   │   │   └─ ... (image filename)
-    ││   │   └─ target
-    ││   │       └─ ... (corresponds to the former)
-    ││   └─ test
-    ││       └─ ...
-    │└────  ... (dataset name)
-    │
-    │
+    ├─ Rain200L
+    ├─ Rain200H
+    │├─ train
+    ││  ├─ input
+    ││  │  └─ ... (image filename)
+    ││  │  └─ target
+    ││  │  └─ ... (corresponds to the former)
+    │└─ test
+    │    └─ ...
     └─ ... (dataset name)
 
 ```
-### Training, Testing and Evaluation
+### 🛠️ Training, Testing and Evaluation
 
 ### Train
 The training code will be released after the paper is accepted.
 You should change the path to yours in the `Train.py` file.  Then run the following script to test the trained model:
 
 ```sh
-python Train.py
+python train.py
 ```
 
 ### Test
 You should change the path to yours in the `Test.py` file.  Then run the following script to test the trained model:
 
 ```sh
-python Test.py
+python test.py
 ```
 
 <!---
@@ -156,50 +135,45 @@ python Test.py
 You should change the path to yours in the `Dataload.py` file.  Then run the following script to test the trained model:
 
 ```sh
-python PSNR_SSIM.py
+python evaluation.py
 ```
 It is recommended that you can download the visual deraining results and retest the quantitative results on your own device and environment.
 --->
 
-<!---
-### Visual Results
+
+### 🚀 Visual Results
 
 <table>
 <thead>
   <tr>
     <th>Dataset</th>
-    <th>Thin Haze</th>
-    <th>Moderate Haze</th>
-    <th>Thin Haze</th>
+    <th>Rain12</th>
+    <th>Rain200L</th>
+    <th>Rain200H</th>
+    <th>Rain1200</th>
+    <th>RW_Rain</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Baidu Cloud</td>
-    <td> <a href="https://pan.baidu.com/s/1dToHnHI9GVaHQ3-I6OIbpA?pwd=rs1k">Download</a> </td>
-    <td align="center"> <a href="https://pan.baidu.com/s/1dToHnHI9GVaHQ3-I6OIbpA?pwd=rs1k">Download</a> </td>
-    <td> <a href="https://pan.baidu.com/s/1dToHnHI9GVaHQ3-I6OIbpA?pwd=rs1k">Download</a> </td>
-  </tr>
-</tbody>
-<tbody>
-  <tr>
-    <td>Google Drive</td>
-    <td> <a href="https://drive.google.com/drive/folders/16UHn439SMJp0ZnDt_yoYc96ypsY7FN7n?usp=drive_link">Download</a> </td>
-    <td align="center"> <a href="https://drive.google.com/drive/folders/16UHn439SMJp0ZnDt_yoYc96ypsY7FN7n?usp=drive_link">Download</a> </td>
-    <td> <a href="https://drive.google.com/drive/folders/16UHn439SMJp0ZnDt_yoYc96ypsY7FN7n?usp=drive_link">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/1ch1H426nQGhRzHZDnF0NAA?pwd=khah 提取码：khah">Download</a> </td>
+    <td align="center"> <a href="https://pan.baidu.com/s/12zgi3x8YY_ZPfI6sfGgMRQ?pwd=l5rn 提取码：l5rn">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/19TkwD-XzDAIp46145wmzpw?pwd=5uw9 提取码：5uw9">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/1xT7pMxESXcMnNL72ihbiuw?pwd=v9xc 提取码：v9xc">Download</a> </td>
+    <td> <a href="https://pan.baidu.com/s/1rerYW9VbEweyaVvQpO7NAA?pwd=dt70 提取码：dt70">Download</a> </td>
   </tr>
 </tbody>
 </table>
-Currently, we provide the visual results on the Sate 1K dataset. The visual results of the RICE dataset and RSSD300 will be updated as quickly as soon.
---->
 
-## Notes
+
+## 🚨 Notes
 
 1. Send e-mail to songtienyu@163.com if you have critical issues to be addressed.
 2. Please note that there exists the slight gap in the final version due to errors caused by different testing devices and environments. 
 3. Because the synthetic dataset is not realistic enough, the trained models may not work well on real hazy images.
 
 
-## Acknowledgment
+## 👍 Acknowledgment
 
-This code is based on the [Restormer](https://github.com/swz30/Restormer). The real-world dataset RRSD300 is collected from [RSHazeNet](https://github.com/chdwyb/RSHazeNet). Thanks for their awesome work.
+This code is based on the [Restormer](https://github.com/swz30/Restormer) and [spikingjelly](https://github.com/fangwei123456/spikingjelly). Thanks for their awesome work.
