@@ -170,7 +170,7 @@ It is recommended that you can download the visual deraining results and retest 
 
 1. Send e-mail to songtienyu@163.com if you have critical issues to be addressed.
 2. Please note that there exists the slight gap in the final version due to errors caused by different testing devices and environments. 
-3. Because the synthetic dataset is not realistic enough, the trained models may not work well on real hazy images.
+3. Because the synthetic dataset is not realistic enough, the trained models may not work well on real world datasets.
 
 
 ## 👍 Acknowledgment
