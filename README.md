@@ -10,7 +10,7 @@
 
 > Learning A Spiking Neural Network for Efficient Image Deraining
 > 
->  [Tianyu Song](https://scholar.google.com/citations?user=wA3Op6cAAAAJ&hl=zh-CN), [Guiyue Jin], [Pengpeng Li](https://github.com/halamadrid-lpp),[Kui Jiang](https://homepage.hit.edu.cn/jiangkui), [Xiang Chen](https://cschenxiang.github.io/), [Jiyu Jin]
+>  [Tianyu Song](https://scholar.google.com/citations?user=wA3Op6cAAAAJ&hl=zh-CN), Guiyue Jin, [Pengpeng Li](https://github.com/halamadrid-lpp),[Kui Jiang](https://homepage.hit.edu.cn/jiangkui), [Xiang Chen](https://cschenxiang.github.io/), Jiyu Jin
 >
 > Dalian Polytechnic University, Nanjing University of Science and Technology and Harbin Institute of Technology
 >
