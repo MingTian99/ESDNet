@@ -1,8 +1,20 @@
-# Learning A Spiking Neural Network for Efficient Image Deraining
 <!---
+# Learning A Spiking Neural Network for Efficient Image Deraining
 [![GoogleDrive](https://img.shields.io/badge/Data-GoogleDrive-brightgreen)](https://drive.google.com/drive/folders/1KRR_L276nviPT9JFPL9zfBiZVKJO6dM1?usp=drive_link)
 [![BaiduPan](https://img.shields.io/badge/Data-BaiduPan-brightgreen)](https://pan.baidu.com/s/1TlgoslD-hIzySDL8l6gekw?pwd=pu2t)
 --->
+<div align="center">
+
+# 【IJCAI'2024🔥】Learning A Spiking Neural Network for Efficient Image Deraining
+</div>
+
+> Learning A Spiking Neural Network for Efficient Image Deraining
+> 
+>  [Tianyu Song](https://scholar.google.com/citations?user=wA3Op6cAAAAJ&hl=zh-CN), [Pengpeng Li](https://github.com/halamadrid-lpp),[Kui Jiang](https://github.com/kuijiang94), [Xiang Chen](https://cschenxiang.github.io/),
+>
+> Dalian Polytechnic University, Nanjing University of Science and Technology and Harbin Institute of Technology
+>
+> Primary contact: Tianyu Song(songtienyu@163.com)
 
 > **Abstract:** 
 Recently, spiking neural networks (SNNs) have demonstrated substantial potential in computer vision tasks.
