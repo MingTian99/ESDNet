@@ -15,9 +15,9 @@ from PIL import Image
 
 parser = argparse.ArgumentParser(description='PSNR SSIM LPIPS', add_help=False)
 
-parser.add_argument('--generated_images_path', default='img_ESDNet_Rain200H_2',
+parser.add_argument('--generated_images_path', default='',
                     help='Generated / Restored / Recovered images -path')
-parser.add_argument('--target_path', default='D:/1Single_Image_Derain/data/Rain200H/test/target', help='Ground-truth -path')
+parser.add_argument('--target_path', default='', help='Ground-truth -path')
 parser.add_argument('--Test_Y', default=True, help='True: test Y channel only; False: test RGB channels')
 parser.add_argument('--Score_save_path', default='Score', help='save the psnr, ssim and lpips score by txt')
 parser.add_argument('--init_model', default='alex', help='Initializing the model,alex or vgg')
